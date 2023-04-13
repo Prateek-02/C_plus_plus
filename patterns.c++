@@ -110,6 +110,7 @@ int main(){
 */
 
 
+/*
 //6th
 int main(){
     int n;
@@ -129,5 +130,74 @@ int main(){
         row+=1;
     }
 }
+*/
+
+
+/*
+//7th
+
+int main(){
+    int n;
+    cin>>n;
+
+    int row=1;
+
+    while(row<=n){
+        int col=1,value=row;
+        while(col<=row){
+            cout<<value<<" ";
+            value+=1;
+            col+=1;
+        }
+        cout<<endl;
+        row+=1;
+    }
+}
+*/
+
+
+/*
+//8th
+
+int main(){
+    int n;
+    cin>>n;
+
+    int row=1;
+    while(row<=n){
+        int col=1,value=row;
+        while(col<=row){
+            cout<<value<<" ";
+            value-=1;
+            col+=1;
+        }
+        cout<<endl;
+        row+=1;
+    }
+}
+*/
+
+
+
+//9th
+
+int main(){
+    int n;
+    cin>>n;
+
+    int row=1;
+
+    while(row<=n){
+        int col=1;
+        while(col<=n){
+            char ch = 'A'+row-1;
+            cout<<ch<<" ";
+            col+=1;
+        }
+        cout<<endl;
+        row+=1;
+    }
+}
+
 
 
