@@ -203,6 +203,7 @@ int main(){
 
 
 
+/*
 //10th
 
 int main(){
@@ -215,6 +216,54 @@ int main(){
         int col=1;
         while(col<=n){
             char ch='A'+col-1;
+            cout<<ch<<" ";
+            col+=1;
+        }
+        cout<<endl;
+        row+=1;
+    }
+}
+*/
+
+
+
+/*
+//11th
+
+int main(){
+    int n;
+    cin>>n;
+
+    int row=1;
+    char count='A';
+
+    while(row<=n){
+        int col=1;
+        while(col<=n){
+            cout<<count<<" ";
+            count+=1;
+            col+=1;
+        }
+        cout<<endl;
+        row+=1;
+    }
+}
+*/
+
+
+
+//12th
+
+int main(){
+    int n;
+    cin>>n;
+
+    int row=1;
+
+    while(row<=n){
+        int col=1;
+        while(col<=n){
+            char ch='A'+row+col-2;
             cout<<ch<<" ";
             col+=1;
         }
