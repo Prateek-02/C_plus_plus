@@ -414,22 +414,25 @@ int main(){
     int n;
     cin>>n;
 
-    int row=n;
+    int row=1;
 
-    while(row>=0){
+    while(row<=n){
         int col=1;
-        while(col<=row){
+        int star= n-row+1;
+        while(star){
             cout<<"*";
+            star-=1;
             col+=1;
         }
         cout<<endl;
-        row--;
+        row+=1;
     }
 }
 */
 
 
 
+/*
 //19th
 
 int main(){
@@ -454,6 +457,49 @@ int main(){
         cout<<endl;
         row+=1;
     }
+}
+*/
+
+
+
+
+//20th
+
+int main(){
+    int n;
+    cin>>n;
+
+    int row=1;
+
+    while(row<=n){
+
+        //Print space
+
+        int space = n-row;
+        while(space){
+            cout<<" ";
+            space-=1;
+        }
+
+        //print 1st triange
+
+        int col=1;
+        while(col<=row){
+            cout<<col;
+            col+=1;
+        }
+
+        //print second triangle
+
+        int start = row-1;
+        while(start){
+            cout<<start;
+            start-=1;
+        }
+        cout<<endl;
+        row+=1;
+    }
+
 }
 
 
