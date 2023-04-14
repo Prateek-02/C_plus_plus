@@ -348,6 +348,7 @@ int main(){
 
 
 
+/*
 //16th
 
 int main(){
@@ -368,6 +369,62 @@ int main(){
         row+=1;
     }
 }
+*/
+
+
+
+/*
+//17th
+
+int main(){
+    int n;
+    cin>>n;
+
+    int row=1;
+
+    while(row<=n){
+
+        //prinrting space
+        int space=n-row;
+        while(space){
+            cout<<" ";
+            space-=1;
+        }
+
+        //printing star
+        int col=1;
+        while(col<=row){
+            cout<<"*";
+            col+=1;
+        }
+        cout<<endl;
+        row+=1;
+    }
+    
+}
+*/
+
+
+
+//18th
+
+int main(){
+    int n;
+    cin>>n;
+
+    int row=n;
+
+    while(row>=0){
+        int col=1;
+        while(col<=row){
+            cout<<"*";
+            col+=1;
+        }
+        cout<<endl;
+        row--;
+    }
+}
+
 
 
 
