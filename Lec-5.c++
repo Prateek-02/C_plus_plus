@@ -173,7 +173,7 @@ int main(){
 /*Questions*/
 
 
-
+/*
 //Find product and sum of the given number and subtract
 
 int main(){
@@ -193,4 +193,24 @@ int main(){
 
     int answer = prod-sum;
     cout<<answer<<endl;
+}
+*/
+
+
+//Question 2
+
+int main(){
+    int n;
+    cin>>n;
+
+    int temp = n;
+    int rev=0;
+
+    while(n!=0){
+        int d = n%10;
+        rev = rev*10+d;
+        n = n/10;
+    }
+    cout<<rev<<endl;
+
 }
