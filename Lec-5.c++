@@ -144,3 +144,53 @@ int main(){
 }
 */
 
+
+
+
+/*Scope*/
+
+/*
+int main(){
+    
+    int a=3;
+    cout<<a<<endl;
+
+    if(true){
+        // cout<<a<<endl;
+        int a=5;
+        cout<<a<<endl;
+    }
+
+    cout<<a<<endl;
+
+    for(int i=0;i<8;i++){
+        cout<<"HI"<<endl;
+    }
+}
+*/
+
+
+/*Questions*/
+
+
+
+//Find product and sum of the given number and subtract
+
+int main(){
+    int n;
+    cin>>n;
+    
+    int prod=1;
+    int sum=0;
+
+    while(n!=0){
+        int digit = n%10;
+        prod = prod*digit;
+        sum  = sum+digit;
+
+        n = n/10;
+    }
+
+    int answer = prod-sum;
+    cout<<answer<<endl;
+}
