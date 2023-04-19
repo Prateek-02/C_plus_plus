@@ -26,6 +26,7 @@ int main(){
 
 /*Compliment of base 10*/
 
+/*
 int main(){
     int n;
     cin>>n;
@@ -43,4 +44,27 @@ int main(){
     int ans = (~n) & mask;
     cout<<ans<<endl;
 
+}
+*/
+
+
+
+/*Power of two*/
+
+int main(){
+    int n;
+    cin>>n;
+
+    int ans=1;
+    for(int i=0;i<=30;i++){
+        if(ans==n){
+            cout<<"True"<<endl;
+        }
+        else{
+            cout<<"False"<<endl;
+        }
+        if(ans<INT32_MAX/2){
+            ans = ans * 2;
+        }
+    }
 }
