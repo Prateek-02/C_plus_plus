@@ -23,6 +23,7 @@ int main(){
 
 /* Mini Calculator*/
 
+/*
 int main(){
     int a,b;
     cout<<"Enter the value of a: ";
@@ -53,5 +54,34 @@ int main(){
 
         default:
         cout<<"Enter a valid operation"<<endl;
+    }
+}
+*/
+
+
+
+/*HW ques*/
+
+int main(){
+    int total=1330;
+
+    int value;
+    cout<<"Enter the value: ";
+    cin>>value;
+
+    int temp = total/value;
+    switch(value){
+        case 100: cout<<"No. of 100 notes req: "<<temp<<endl;
+                    break;
+        case 50: cout<<"No. of 50 notes req: "<<temp<<endl;
+                    break;
+        case 20: cout<<"No. of 20 notes req: "<<temp<<endl;
+                    break;
+        case 10: cout<<"No. of 10 notes req: "<<temp<<endl;
+                    break;
+        case 1: cout<<"No. of 1 notes req: "<<temp<<endl;
+                    break;
+        default:
+        cout<<"Enter a valid value"<<endl;                        
     }
 }
