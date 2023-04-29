@@ -242,10 +242,10 @@ int main(){
 /*Fibbonacci*/
 
 int fibo(int n){
-    int a=0,b=1;
+    int a=0,b=1,i;
     
     cout<<a<<" "<<b<<" ";
-    for(int i=1;i<n;i++){
+    for(i=1;i<n;i++){
         int next = a+b;
         cout<<next<<" ";
         a=b;
