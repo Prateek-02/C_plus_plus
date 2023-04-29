@@ -240,7 +240,7 @@ int main(){
 
 
 /*Fibbonacci*/
-
+/*
 int fibo(int n){
     int a=0,b=1,i;
     
@@ -257,6 +257,26 @@ int main(){
     int n;
     cin>>n;
     fibo(n);
+}
+*/
+
+
+/*Pass by value*/
+
+
+void dummy(int n){
+    n++;
+    cout<<"n is: "<<n<<endl;
+}
+
+int main(){
+    int n;
+    cin>>n;
+
+
+    dummy(n);
+
+    cout<<"Number n is: "<<n<<endl;
 }
 
 
