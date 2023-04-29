@@ -241,7 +241,7 @@ int main(){
 
 /*Fibbonacci*/
 
-void fibo(int n){
+int fibo(int n){
     int a=0,b=1;
     
     cout<<a<<" "<<b<<" ";
