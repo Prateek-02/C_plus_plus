@@ -266,7 +266,7 @@ int main(){
 
 void dummy(int n){
     n++;
-    cout<<"n is: "<<n<<endl;
+    cout<<"N is: "<<n<<endl;
 }
 
 int main(){
@@ -276,7 +276,7 @@ int main(){
 
     dummy(n);
 
-    cout<<"Number n is: "<<n<<endl;
+    cout<<"Number N is: "<<n<<endl;
 }
 
 
