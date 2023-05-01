@@ -67,7 +67,7 @@ int main(){
         cout<<"Upper case"<<endl;
     }
     else if(ch >= 97 && ch <= 122){
-        cout<<"lower case"<<endl;
+        cout<<"Lower case"<<endl;
     }
     else{
         cout<<"Numeric"<<endl;
