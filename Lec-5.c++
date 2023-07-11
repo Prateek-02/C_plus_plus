@@ -199,6 +199,7 @@ int main(){
 
 //Question 2
 
+/*
 int main(){
     int n;
     cin>>n;
@@ -214,3 +215,4 @@ int main(){
     cout<<rev<<endl;
 
 }
+*/
