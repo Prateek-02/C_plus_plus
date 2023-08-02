@@ -105,6 +105,7 @@ int main(){
 
 /*Functions*/
 
+/*
 int power(int a,int b){
 
     int ans=1;
@@ -125,4 +126,29 @@ int main(){
 
     cout<<"Answer is: "<<ans<<endl;
     return 0;
+}
+*/
+
+
+bool isEven(int a){
+    if(a%2==0){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+
+int main(){
+
+    int num;
+    cin>>num;
+
+    if (isEven(num)){
+        cout<<"Number is even"<<endl;
+    }
+
+    else{
+        cout<<"Number is odd"<<endl;
+    }
 }
