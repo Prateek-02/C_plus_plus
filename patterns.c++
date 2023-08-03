@@ -462,7 +462,7 @@ int main(){
 
 
 
-
+/*
 //20th
 
 int main(){
@@ -500,6 +500,28 @@ int main(){
         row+=1;
     }
 
+}
+*/
+
+
+// Using for loop
+
+
+//1st
+
+int main(){
+    int row,col;
+    cout<<"Enter the no. of rows: ";
+    cin>>row;
+    cout<<"Enter the no. of columns: ";
+    cin>>col;
+
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=col;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
 }
 
 
