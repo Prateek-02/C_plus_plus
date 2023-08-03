@@ -564,7 +564,7 @@ int main(){
 */
 
 
-/**/
+/*
 //Inverted half pyramid after 180deg rotation
 
 int main(){
@@ -579,6 +579,23 @@ int main(){
             else{
                 cout<<"*";
             }
+        }
+        cout<<endl;
+    }
+}
+*/
+
+
+/**/
+//Half pyramid using numbers
+
+int main(){
+    int n;
+    cin>>n;
+
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            cout<<i;
         }
         cout<<endl;
     }
