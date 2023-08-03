@@ -161,6 +161,7 @@ int main(){
 
 /*Factorial*/
 
+/*
 int fact(int n){
 
     int fact=1;
@@ -190,3 +191,51 @@ int main(){
     cout<<"Answer is:"<<nCr(n,r)<<endl;
 
 }
+*/
+
+/*Counting*/
+
+/*
+void printcounting(int n){       //void does not return anything
+    //Function body
+    for(int i=1;i<=n;i++){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+}
+
+int main(){
+
+    int n;
+    cin>>n;
+    //Function call
+    printcounting(n);
+}
+*/
+
+/*Prime or not*/
+
+bool isPrime(int n){
+
+    for(int i=2;i<n;i++){
+        if(n%i==0){
+            return 0;
+        }
+    }
+return 1;
+}
+
+int main(){
+
+    int n;
+    cin>>n;
+
+    if(isPrime(n)){
+        cout<<"Is a Prime no."<<endl;
+    }
+
+    else{
+        cout<<"Is not a Prime no."<<endl;
+    }
+}
+
