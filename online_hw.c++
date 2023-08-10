@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+/*
 int main(){
     int sub1,sub2,sub3,sub4,sub5;
     cin>>sub1>>sub2>>sub3>>sub4>>sub5;
@@ -28,5 +29,23 @@ int main(){
     }
     else{
         cout<<"Reappear"<<endl;
+    }
+}
+*/
+
+
+//Array
+
+int main(){
+    int n;
+    cout<<"Enter the size of array: ";
+    cin>>n;
+    int arr1[n];
+    cout<<"Enter the"<< n <<"elements: ";
+    for(int i=0;i<n;i++){
+        cin>>arr1[i];
+    }
+    for(int i=0;i<n;i++){
+        cout<<arr1[i]<<" ";
     }
 }
