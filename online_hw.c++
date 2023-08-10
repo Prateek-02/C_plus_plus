@@ -2,10 +2,10 @@
 using namespace std;
 
 int main(){
-    int a,b,c,d,e;
-    cin>>a>>b>>c>>d>>e;
+    int sub1,sub2,sub3,sub4,sub5;
+    cin>>sub1>>sub2>>sub3>>sub4>>sub5;
 
-    int total = a+b+c+d+e;
+    int total = sub1+sub2+sub3+sub4+sub5;
     cout<<"Total marks:"<<total<<endl;
 
     int per = total/5;
