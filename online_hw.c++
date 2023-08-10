@@ -52,9 +52,11 @@ int main(){
 }
 */
 
+//insertion
 
+/*
 int main(){
-    int n,position,value;
+    int n,index,value;
     cout<<"Enter the size of array: ";
     cin>>n;
     int arr1[n];
@@ -63,20 +65,58 @@ int main(){
         cin>>arr1[i];
     }
 
-    cout<<"Enter the position where you want to insert the value: ";
-    cin>>position;
+    cout<<"Enter the index where you want to insert the value: ";
+    cin>>index;
 
     cout<<"Enter the value you want to insert: ";
     cin>>value;
 
 
-    for(int i=n;i>=position-1;i--){
+    for(int i=n;i>=index-1;i--){
         arr1[i+1]=arr1[i];
     }
 
-    arr1[position-1] = value;
+    arr1[index-1] = value;
 
     for(int i=0;i<=n;i++){
         cout<<arr1[i]<<" ";
+    }
+}
+*/
+
+
+//Deletion
+
+int main(){
+    int n,index;
+    cout<<"enter the size of array: ";
+    cin>>n;
+
+    int arr[n];
+    cout<<"Enter the "<<n<<" Elements: ";
+
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    } 
+
+    cout<<"Original array: ";
+
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+
+    cout<<endl;
+    
+    cout<<"Enter the index to be deleted: ";
+    cin>>index;
+
+    for(int i=index;i<=n-1;i++){
+        arr[i] = arr[i+1];
+    }
+
+    cout<<"New array: ";
+
+    for(int i=0;i<n-1;i++){
+        cout<<arr[i]<<" ";
     }
 }
