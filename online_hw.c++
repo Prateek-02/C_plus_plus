@@ -87,6 +87,7 @@ int main(){
 
 //Deletion
 
+/*
 int main(){
     int n,index;
     cout<<"enter the size of array: ";
@@ -118,5 +119,24 @@ int main(){
 
     for(int i=0;i<n-1;i++){
         cout<<arr[i]<<" ";
+    }
+}
+*/
+
+// Linear search
+
+int main(){
+    int arr[6] = {12,13,14,15,16,17};
+    int target;
+    cin>>target;
+
+    for(int i=0;i<6;i++){
+        if(arr[i]==target){
+            cout<<"Found at index: "<<i<<endl;
+            break;
+        }
+        else{
+            cout<<"Not found"<<endl;
+        }
     }
 }
