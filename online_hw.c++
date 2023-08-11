@@ -125,6 +125,7 @@ int main(){
 
 // Linear search
 
+/*
 int main(){
     int arr[6] = {12,13,14,15,16,17};
     int target;
@@ -137,6 +138,47 @@ int main(){
         }
         else{
             cout<<"Not found"<<endl;
+        }
+    }
+}
+*/
+
+
+//Binary search
+
+int main(){
+    int n;
+    cout<<"Enter the number of elements in array: ";
+    cin>>n;
+    int arr[n];
+    cout<<"Enter the "<<n<<" Elements: ";
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    cout<<"Array: ";
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+
+    int beg = 0;
+    int end = 5;
+
+    int target;
+    cout<<"Enter the target element: ";
+    cin>>target;
+    
+    while(beg<=end){
+        int mid = (beg+end)/2;
+        if(arr[mid]==target){
+            cout<<"Element found at index: "<<mid<<endl;
+            break;
+        }
+        else if(arr[mid]<target){
+            beg = mid+1;
+        }
+        else{
+            end = mid-1;
         }
     }
 }
