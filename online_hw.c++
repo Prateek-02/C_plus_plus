@@ -160,14 +160,14 @@ int main(){
             break;
         }
     }
-    
 }
 */
 
 
+
 //Binary search
 
-/*
+
 int main(){
     int n;
     cout<<"Enter the number of elements in array: ";
@@ -177,14 +177,14 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    cout<<"Array: ";
+    cout<<"Original array is: ";
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
     cout<<endl;
 
     int beg = 0;
-    int end = 5;
+    int end = n-1;
 
     int target;
     cout<<"Enter the target element: ";
@@ -204,11 +204,13 @@ int main(){
         }
     }
 }
-*/
+
+
 
 
 //Bubble Sort
 
+/*
 int main(){
     int n;
     cout<<"Enter the number of elements: ";
@@ -221,7 +223,7 @@ int main(){
         cin>>arr[i];
     }
 
-    cout<<"Array is: ";
+    cout<<"Original array: ";
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
@@ -229,8 +231,9 @@ int main(){
     cout<<endl;
 
     int temp;
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n-1-i;j++)
+    for(int i=0;i<n;i++){            // For no. of passes
+
+        for(int j=0;j<n-1-i;j++)     // For comparision in each pass
         {
             if(arr[j]>arr[j+1]){
                 temp = arr[j];
@@ -239,7 +242,11 @@ int main(){
             }
         }    
     }
+
+    cout<<"Array after sorting: ";
+
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
 }
+*/
