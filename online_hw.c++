@@ -167,7 +167,7 @@ int main(){
 
 //Binary search
 
-
+/*
 int main(){
     int n;
     cout<<"Enter the number of elements in array: ";
@@ -204,6 +204,7 @@ int main(){
         }
     }
 }
+*/
 
 
 
@@ -250,3 +251,93 @@ int main(){
     }
 }
 */
+
+
+//Sum and differnece
+
+/*
+int main(){
+    int n;
+    cout<<"Enter the number of elements: ";
+    cin>>n;
+
+    int arr[n];
+    cout<<"Enter the "<<n<<" elements: ";
+
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    cout<<"Original array is: ";
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+    
+    cout<<endl;
+
+    int sum_even = 0;
+    int sum_odd = 0;
+
+    for(int i=0;i<n;i++){
+        if(arr[i]%2==0){
+            sum_even +=arr[i];
+        }
+        else{
+            sum_odd+=arr[i];
+        }
+    }
+    cout<<"sum_even is: "<<sum_even<<endl;
+    cout<<"sum_odd is: "<<sum_odd<<endl;
+
+    int difference = sum_even-sum_odd;
+    cout<<"Difference is: "<<difference;
+
+
+}
+*/
+
+// Sum of to max. elements
+
+int main(){
+    int n;
+    cout<<"Enter the number of elements: ";
+    cin>>n;
+
+    int arr[n];
+    cout<<"Enter the "<<n<<" elements: ";
+
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    cout<<"Original array: ";
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+
+    cout<<endl;
+
+    int temp;
+    for(int i=0;i<n;i++){            // For no. of passes
+
+        for(int j=0;j<n-1-i;j++)     // For comparision in each pass
+        {
+            if(arr[j]>arr[j+1]){
+                temp = arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }    
+    }
+
+    cout<<"Array after sorting: ";
+
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+
+    cout<<endl;
+
+    int sum = arr[n-1] +  arr[n-2];
+    cout<<"Sum: "<<sum;
+}
