@@ -127,25 +127,47 @@ int main(){
 
 /*
 int main(){
-    int arr[6] = {12,13,14,15,16,17};
+    int n;
+    cout<<"Enter the number of elements: ";
+    cin>>n;
+
+    int arr[n];
+    cout<<"Enter the "<<n<<" elements: ";
+
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    cout<<"Array is: ";
+
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+
+    cout<<endl;
+
     int target;
+    cout<<"Enter the target element: ";
     cin>>target;
 
-    for(int i=0;i<6;i++){
+    for(int i=0;i<n;i++){
         if(arr[i]==target){
-            cout<<"Found at index: "<<i<<endl;
+            cout<<"Element found at index: "<<i;
             break;
         }
         else{
-            cout<<"Not found"<<endl;
+            cout<<"Element not found ";
+            break;
         }
     }
+    
 }
 */
 
 
 //Binary search
 
+/*
 int main(){
     int n;
     cout<<"Enter the number of elements in array: ";
@@ -182,3 +204,5 @@ int main(){
         }
     }
 }
+*/
+
