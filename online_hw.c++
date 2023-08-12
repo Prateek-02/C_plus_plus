@@ -155,13 +155,10 @@ int main(){
             cout<<"Element found at index: "<<i;
             break;
         }
-        else{
-            cout<<"Element not found ";
-            break;
-        }
     }
-}
-*/
+ }
+ */
+
 
 
 
@@ -296,8 +293,9 @@ int main(){
 }
 */
 
-// Sum of to max. elements
+// Sum of two max. elements
 
+/*
 int main(){
     int n;
     cout<<"Enter the number of elements: ";
@@ -340,4 +338,57 @@ int main(){
 
     int sum = arr[n-1] +  arr[n-2];
     cout<<"Sum: "<<sum;
+}
+*/
+
+
+// sum of two max elements and min elements
+
+int main(){
+    int n;
+    cout<<"Enter the number of elements: ";
+    cin>>n;
+
+    int arr[n];
+    cout<<"Enter the "<<n<<" elements: ";
+
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    cout<<"Original array: ";
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+
+    cout<<endl;
+
+    int temp;
+    for(int i=0;i<n;i++){            // For no. of passes
+
+        for(int j=0;j<n-1-i;j++)     // For comparision in each pass
+        {
+            if(arr[j]>arr[j+1]){
+                temp = arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }    
+    }
+
+    cout<<"Array after sorting: ";
+
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+
+    cout<<endl;
+
+    int max_sum = arr[n-1] +  arr[n-2];
+    cout<<"Sum of 2 maximum numbers: "<<max_sum;
+
+    cout<<endl;
+
+    int min_sum = arr[0]+arr[n-5];
+    cout<<"Sum of 2 minimum numbers: "<<min_sum;
 }
