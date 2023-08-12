@@ -344,6 +344,7 @@ int main(){
 
 // sum of two max elements and min elements
 
+/*
 int main(){
     int n;
     cout<<"Enter the number of elements: ";
@@ -391,4 +392,49 @@ int main(){
 
     int min_sum = arr[0]+arr[n-5];
     cout<<"Sum of 2 minimum numbers: "<<min_sum;
+}
+*/
+
+
+//count of elements
+
+int main(){
+    int n;
+    cout<<"Enter the number of elements: ";
+    cin>>n;
+
+    int arr[n];
+    cout<<"Enter the "<<n<<" elements: ";
+
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    cout<<"Original array is: ";
+
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+
+    cout<<endl;
+
+    int target1,target2;
+    cout<<"Enter the target elements: ";
+    cin>>target1>>target2;
+
+    int count1=0;
+    int count2=0;
+
+    for(int i=0;i<n;i++){
+        if(arr[i]==target1){
+            count1+=1;
+        }
+        else if(arr[i]==target2){
+            count2+=1;
+        }
+    }
+    cout<<"Count of "<<target1<<" : "<<count1;
+    cout<<endl;
+    cout<<"Count of "<<target2<<" : "<<count2;
+
 }
