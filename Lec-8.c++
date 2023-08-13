@@ -260,7 +260,7 @@ int main(){
 /*Fibonnaci*/
 
 /*
-int fibo(int n){
+void fibo(int n){
     int a=0,b=1;
     cout<<"Fibonacci series: ";
     cout<<a<<" "<<b<<" ";
@@ -271,7 +271,6 @@ int fibo(int n){
         b = next;
         cout<<next<<" ";
     }
-    return 0;
     
 
     
