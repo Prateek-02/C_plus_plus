@@ -259,6 +259,7 @@ int main(){
 
 /*Fibonnaci*/
 
+/*
 int fibo(int n){
     int a=0,b=1;
     cout<<"Fibonacci series: ";
@@ -284,5 +285,25 @@ int main(){
 
     fibo(n);
 
+}
+*/
+
+
+/*Pass by value*/
+
+void dummy(int n){
+    n++;
+    cout<<"n is: "<<n<<endl;
+}
+
+int main(){
+    int n;
+    cin>>n;
+
+    dummy(n);
+
+    cout<<"number n is: "<<n<<endl;
+
+    return 0;
 }
 
