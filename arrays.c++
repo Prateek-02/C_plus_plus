@@ -2,10 +2,12 @@
 using namespace std;
 
 
-// void printarray(){
+void printarray(int arr[],int size){
 
-// }
-
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+}
 int main(){
     int num[10];
     cout<<"Value at 1 index: "<<num[1]<<endl;
@@ -17,8 +19,9 @@ int main(){
 
     int n=15;
 
-    for(int i=0;i<n;i++){
-        cout<<third[i]<<" ";
-    }
+    // for(int i=0;i<n;i++){
+    //     cout<<third[i]<<" ";
+    // }
 
+    printarray(third,15);
 }
