@@ -244,6 +244,7 @@ int main(){
 
 /*Ap*/
 
+/*
 int main(){
     int n;
     cout<<"Enter the value n: ";
@@ -252,5 +253,36 @@ int main(){
     int ap = 3*n+7;
 
     cout<<"Nth term is: "<<ap;
+}
+*/
+
+
+/*Fibonnaci*/
+
+int fibo(int n){
+    int a=0,b=1;
+    cout<<"Fibonacci series: ";
+    cout<<a<<" "<<b<<" ";
+    int next;
+    for(int i=b;i<=n;i++){
+        int next = a+b;
+        a = b;
+        b = next;
+        cout<<next<<" ";
+    }
+    return 0;
+    
+
+    
+}
+
+
+int main(){
+    int n;
+    cout<<"Enter the number: ";
+    cin>>n;
+
+    fibo(n);
+
 }
 
