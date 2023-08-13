@@ -291,6 +291,7 @@ int main(){
 
 /*Pass by value*/
 
+/*
 void dummy(int n){
     n++;
     cout<<"n is: "<<n<<endl;
@@ -305,5 +306,19 @@ int main(){
     cout<<"number n is: "<<n<<endl;
 
     return 0;
+}
+*/
+
+
+
+int update(int a){
+    int ans = a*a;
+    return ans;
+}
+int main(){
+    int a=14;
+    a = update(a);
+    cout<< a <<endl;
+
 }
 
