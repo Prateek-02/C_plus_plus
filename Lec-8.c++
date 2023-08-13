@@ -215,6 +215,7 @@ int main(){
 
 /*Prime or not*/
 
+/*
 bool isPrime(int n){
 
     for(int i=2;i<n;i++){
@@ -237,5 +238,19 @@ int main(){
     else{
         cout<<"Is not a Prime no."<<endl;
     }
+}
+*/
+
+
+/*Ap*/
+
+int main(){
+    int n;
+    cout<<"Enter the value n: ";
+    cin>>n;
+
+    int ap = 3*n+7;
+
+    cout<<"Nth term is: "<<ap;
 }
 
