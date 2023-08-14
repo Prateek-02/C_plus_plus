@@ -478,6 +478,7 @@ int main(){
 }
 */
 
+/*
 int sum(int a,double b){
     return(a+b);
 }
@@ -499,4 +500,49 @@ int main(){
     cout<<"Sum of c+d: "<<sum(9.5,6)<<endl;
     cout<<"Sum of e+f: "<<sum(3,6)<<endl;
     cout<<"Sum of g+h: "<<sum(9.5,9.7)<<endl;
+}
+*/
+
+
+class Triangle{
+    int a,b,c;
+
+    friend float perimeter(Triangle t);
+    friend float longest(Triangle t);
+
+    public:
+    void setSides(int n1,int n2,int n3){
+        a = n1;
+        b = n2;
+        c = n3;
+    }
+};
+
+float perimeter(Triangle t){
+        return t.a+t.b+t.c;
+}
+float longest(Triangle t){
+    if((t.a>t.b) && (t.a>t.c)){
+        return t.a;
+    } 
+    else if(t.b>t.a && t.b>t.c){
+        return t.b;
+    }
+    else{
+        return t.c;
+    }
+}
+int main(){
+    Triangle t1;
+    t1.setSides(4,5,6);
+
+    float p = perimeter(t1);
+
+    cout<<"Perimeter of the triangle is: "<<p<<endl;
+
+    float l = longest(t1);
+
+    cout<<"Longest side is: "<<l<<endl;
+    return 0;
+  
 }
