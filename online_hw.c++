@@ -441,6 +441,8 @@ int main(){
 }
 */
 
+
+/*
 int main(){
     int n;
     cout<<"Enter the size of array: ";
@@ -473,4 +475,18 @@ int main(){
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
+}
+*/
+
+int sum(int a,float b){
+    return(a+b);
+}
+
+int sum(float c,int d){
+    return(c+d);
+}
+
+int main(){
+    cout<<"Sum of a+b: "<<sum(3,4.5)<<endl;
+    cout<<"Sum of c+d: "<<sum(9.5,6)<<endl;
 }
