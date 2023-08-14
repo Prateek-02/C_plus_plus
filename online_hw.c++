@@ -478,15 +478,25 @@ int main(){
 }
 */
 
-int sum(int a,float b){
+int sum(int a,double b){
     return(a+b);
 }
 
-int sum(float c,int d){
+int sum(double c,int d){
     return(c+d);
+}
+
+int sum(int e,int f){
+    return(e+f);
+}
+
+int sum(double g,double h){
+    return(g+h);
 }
 
 int main(){
     cout<<"Sum of a+b: "<<sum(3,4.5)<<endl;
     cout<<"Sum of c+d: "<<sum(9.5,6)<<endl;
+    cout<<"Sum of e+f: "<<sum(3,6)<<endl;
+    cout<<"Sum of g+h: "<<sum(9.5,9.7)<<endl;
 }
