@@ -10,6 +10,17 @@ class Hero{
     public:                         
     char level;
 
+    //constructor
+    Hero(){
+        cout<<"constructor called"<<endl;
+    }
+
+    //parameterised coonstructor
+    Hero(int health){
+        cout<<"this -> "<<this<<endl;
+        this->health = health;
+    }
+
     int gethealth(){
         return health;
     }
@@ -31,7 +42,13 @@ class Hero{
 
 int main(){
 
-    Hero sachin;
+    //object create statically
+    Hero sachin(10);
+    cout<<"Address of sachin: "<<&sachin<<endl;
+
+    //dynamically
+    Hero *h = new Hero(11);
+
 
 
 
