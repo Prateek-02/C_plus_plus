@@ -22,7 +22,7 @@ class Hero{
         health = h;
     }
 
-    void sethevel(int ch){
+    void setlevel(int ch){
         level = ch;
     }
 };
@@ -30,6 +30,36 @@ class Hero{
 
 
 int main(){
+
+    Hero sachin;
+
+
+
+
+    /*
+    // static allocation
+
+    Hero a;
+    a.sethealth(80);
+    a.setlevel('A');
+
+    cout<<"Health is: "<<a.gethealth()<<endl;
+    cout<<"level is: "<<a.level<<endl;
+
+
+    // Dynamically
+
+    Hero *b = new Hero;
+
+    b->sethealth(70);
+    b->setlevel('B');
+
+    cout<<"Health is: "<<(*b).gethealth()<<endl;
+    cout<<"level is: "<<(*b).level<<endl;
+    */
+
+
+   /*
     // creation of object
     Hero h1;
 
@@ -39,5 +69,7 @@ int main(){
 
     cout<<"health is: "<<h1.gethealth()<<endl;
     cout<<"level is: "<<h1.level<<endl;
-    // cout<<"Size: "<<sizeof(h1)<<endl;      // in case of empty class 1 byte of memory is allocated
+    cout<<"Size: "<<sizeof(h1)<<endl;      // in case of empty class 1 byte of memory is allocated
+    */
+
 }
