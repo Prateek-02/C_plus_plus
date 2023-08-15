@@ -503,7 +503,9 @@ int main(){
 }
 */
 
+//Class
 
+/*
 class Triangle{
     int a,b,c;
 
@@ -544,5 +546,40 @@ int main(){
 
     cout<<"Longest side is: "<<l<<endl;
     return 0;
-  
+}
+*/
+
+
+
+class Circle{
+    float radius;
+    float pi;
+    friend float perimeter(Circle c);
+    friend float area(Circle c);
+
+    public:
+    void setnumbers(float r,float p){
+        radius = r;
+        pi = p;
+    }
+};
+
+float perimeter(Circle c){
+    return 2*(c.pi*c.radius);
+}
+float area(Circle c){
+    return (c.pi)*(c.radius*c.radius);
+}
+
+int main(){
+    Circle c1;
+    c1.setnumbers(10,3.14);
+
+    float p = perimeter(c1);
+
+    cout<<"Perimeter of circle is: "<<p<<endl;
+
+    float a = area(c1);
+
+    cout<<"Area of circle is: "<<a<<endl;
 }
