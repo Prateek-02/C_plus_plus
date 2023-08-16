@@ -506,6 +506,7 @@ int main(){
 
 //Class
 
+// find perimeter and longest side of triangle using friend class
 /*
 class Triangle{
     int a,b,c;
@@ -551,6 +552,7 @@ int main(){
 */
 
 
+// find area and perimeter of circle using friend class
 /*
 class Circle{
     float radius;
@@ -586,7 +588,7 @@ int main(){
 }
 */
 
-
+// Find perimeter,longest and smallest side of triangle using friend class
 
 class Triangle{
     int a,b,c;
@@ -647,7 +649,7 @@ int main(){
     float s = smallest(t1);
 
     cout<<"Smallest side is: "<<s<<endl;
-    
+
     return 0;
 
 }
