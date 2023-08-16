@@ -551,7 +551,7 @@ int main(){
 */
 
 
-
+/*
 class Circle{
     float radius;
     float pi;
@@ -584,3 +584,71 @@ int main(){
 
     cout<<"Area of circle is: "<<a<<endl;
 }
+*/
+
+
+
+class Triangle{
+    int a,b,c;
+
+    friend float perimeter(Triangle t);
+    friend float longest(Triangle t);
+    friend float smallest(Triangle t);
+
+    public:
+    void setsides(int n1,int n2,int n3){
+        a = n1;
+        b = n2;
+        c = n3;
+    }
+};
+
+
+float perimeter(Triangle t){
+    return t.a+t.b+t.c;
+}
+
+float longest(Triangle t){
+    if((t.a>t.b) && (t.a>t.c)){
+        return t.a;
+    } 
+    else if(t.b>t.a && t.b>t.c){
+        return t.b;
+    }
+    else{
+        return t.c;
+    }
+}
+
+float smallest(Triangle t){
+    if(t.a<t.b && t.a<t.c){
+        return t.a;
+    }
+    else if(t.b<t.a && t.b<t.c){
+        return t.b;
+    }
+    else{
+        return t.c;
+    }
+}
+
+int main(){
+    Triangle t1;
+    t1.setsides(4,5,6);
+
+    float p = perimeter(t1);
+
+    cout<<"Perimeter of the triangle is: "<<p<<endl;
+
+    float l = longest(t1);
+
+    cout<<"Longest side is: "<<l<<endl;
+
+    float s = smallest(t1);
+
+    cout<<"Smallest side is: "<<s<<endl;
+    
+    return 0;
+
+}
+
