@@ -589,7 +589,7 @@ int main(){
 */
 
 // Find perimeter,longest and smallest side of triangle using friend class
-
+/*
 class Triangle{
     int a,b,c;
 
@@ -652,5 +652,30 @@ int main(){
 
     return 0;
 
+}
+*/
+
+
+int main(){
+    int n;
+    cout<<"Enter the number: ";
+    cin>>n;
+
+    int arr[50];
+    int numdigit = 0;
+
+    while(n!=0){
+        int digit = n%10;
+        arr[numdigit] = digit;
+        numdigit++;
+        n = n/10;
+    }
+
+    cout<<"array: ";
+
+    for(int i =numdigit-1;i>=0;i--){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
 }
 
