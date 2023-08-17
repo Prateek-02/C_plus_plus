@@ -20,6 +20,15 @@ class Hero{
         cout<<"this -> "<<this<<endl;
         this->health = health;
     }
+    Hero(int health,char level){
+        this-> level = level;
+        this-> health = health;
+    }
+
+    void print(){
+        cout<<"health: "<<this->health<<endl;
+        cout<<"level: "<<this->level<<endl;
+    }
 
     int gethealth(){
         return health;
@@ -41,13 +50,34 @@ class Hero{
 
 
 int main(){
+  
+    Hero anish(70, 'C');
+    anish.print();
 
-    //object create statically
-    Hero sachin(10);
-    cout<<"Address of sachin: "<<&sachin<<endl;
+    // copy constructor
+    Hero r(anish);
+    r.print();
 
-    //dynamically
-    Hero *h = new Hero(11);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // //object create statically
+    // Hero sachin(10);
+    // cout<<"Address of sachin: "<<&sachin<<endl;
+
+    // //dynamically
+    // Hero *h = new Hero(11);
 
 
 
