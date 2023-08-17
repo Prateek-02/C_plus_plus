@@ -655,6 +655,7 @@ int main(){
 }
 */
 
+// Enter a number and store each digit in a array and find the sum of digits
 
 int main(){
     int n;
