@@ -673,9 +673,13 @@ int main(){
 
     cout<<"array: ";
 
+    int sum=0;
+
     for(int i =numdigit-1;i>=0;i--){
-        cout<<arr[i]<<" ";
+        cout<<arr[i]<<" "<<endl;;
+        sum += arr[i];
     }
+    cout<<"Sum: "<<sum;
     cout<<endl;
 }
 
