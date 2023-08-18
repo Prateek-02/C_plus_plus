@@ -36,7 +36,7 @@ int main(){
     
 }*/
 
-
+/*
 int main(){
     int n;
     cin>>n;
@@ -50,4 +50,10 @@ int main(){
     for(int i=n-1;i>=0;i--){
         cout<<arr[i]<<" ";
     }
+}
+*/
+
+int main(){
+
+    cout<<3%6;
 }
