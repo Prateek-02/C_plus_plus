@@ -54,6 +54,37 @@ int main(){
 */
 
 int main(){
+    int n,m;
+    cout<<"enter n: ";
+    cin>>n;
+    int arr1[n];
+    cout<<"Enter the elements of 1st array: ";
+    for(int i=0;i<n;i++){
+        cin>>arr1[i];
+    }
 
-    cout<<3%6;
+    cin>>m;
+    cout<<"enter m: ";
+    int arr2[m];
+    cout<<"Enter the elements: ";
+    for(int i=0;i<m;i++){
+        cin>>arr2[i];
+    }
+
+    int merged = n+m;
+    int arr3[merged];
+
+    for(int i=0;i<n;i++){
+        arr3[i] = arr1[i];
+    }
+
+    for(int i=0;i<m;i++){
+        arr3[n+i] = arr2[i];
+    }
+
+    for(int i=0;i<merged;i++){
+        cout<<arr3[i]<<" ";
+    }
+
+    
 }
