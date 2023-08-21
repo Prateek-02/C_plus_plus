@@ -657,6 +657,7 @@ int main(){
 
 // Enter a number and store each digit in a array and find the sum of digits
 
+/*
 int main(){
     int n;
     cout<<"Enter the number: ";
@@ -682,5 +683,22 @@ int main(){
     }
     cout<<"Sum: "<<sum;
     cout<<endl;
+}
+*/
+
+// Enum
+
+enum Color{
+    RED,GREEN,BLUE,YELLOW
+};
+
+int main(){
+    Color pick=RED;
+    if(pick==RED){
+        cout<<"Color is red";
+    }
+    else{
+        cout<<"Different color";
+    }
 }
 
