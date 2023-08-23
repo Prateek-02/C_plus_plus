@@ -11,6 +11,7 @@ class Hero{
     public:     
     char *name;                    
     char level;
+    static int timetocomplete;
 
     //constructor
     Hero(){
@@ -66,46 +67,72 @@ class Hero{
     void setname(char name[]){
         strcpy(this->name,name);
     }
+
+    static int random(){
+        return timetocomplete;
+    }
+
+    //Destructor
+    ~Hero(){
+        cout<<"Destructor bhai called";
+    }
 };
 
-
+int Hero::timetocomplete=5;
 
 int main(){
+
+    cout<<Hero::timetocomplete<<endl;
+
+
+
+/*
+    //static
+    Hero a;
+
+    //Dynamic
+    Hero *b = new Hero();
+
+    return 0;
+*/
+
+}
+
+
+
+
+
   
+  /*
+  int main(){
     Hero hero1;
     hero1.sethealth(50);
     hero1.setlevel('D');
     char name[7] = "Babbar";
     hero1.setname(name);
 
-    hero1.print();
+    // hero1.print();
 
     //use default copy constructor
 
     Hero hero2(hero1);
-    hero2.print();
+    // hero2.print();
 
     hero1.name[0] = 'G';
     hero1.print();
     hero2.print();
 
+    hero1 = hero2;
+    hero1.print();
+    hero2.print();
+    */
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-    // //object create statically
+    // //object created statically
     // Hero sachin(10);
     // cout<<"Address of sachin: "<<&sachin<<endl;
 
@@ -150,6 +177,5 @@ int main(){
     cout<<"health is: "<<h1.gethealth()<<endl;
     cout<<"level is: "<<h1.level<<endl;
     cout<<"Size: "<<sizeof(h1)<<endl;      // in case of empty class 1 byte of memory is allocated
-    */
-
 }
+*/
