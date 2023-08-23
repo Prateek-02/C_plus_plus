@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string.h>
 using namespace std;
 
 class Hero{
@@ -7,12 +8,14 @@ class Hero{
     private:                           
     int health;
 
-    public:                         
+    public:     
+    char *name;                    
     char level;
 
     //constructor
     Hero(){
         cout<<"constructor called"<<endl;
+        name = new char[100];
     }
 
     //parameterised coonstructor
@@ -26,15 +29,18 @@ class Hero{
     }
 
     //copy constructor
-    Hero(Hero& temp){
-        cout<<"Copy constructor called"<<endl;
-        this->health = temp.health;
-        this->level = temp.level;
-    }
+    // Hero(Hero& temp){
+    //     cout<<"Copy constructor called"<<endl;
+    //     this->health = temp.health;
+    //     this->level = temp.level;
+    // }
 
     void print(){
-        cout<<"health: "<<this->health<<endl;
-        cout<<"level: "<<this->level<<endl;
+        cout<<endl;
+        cout<<"[Name: "<<this->name<<",";
+        cout<<" Health: "<<this->health<<",";
+        cout<<" Level: "<<this->level<<"]"<<endl;
+        cout<<endl;
     }
 
     int gethealth(){
@@ -52,18 +58,34 @@ class Hero{
     void setlevel(int ch){
         level = ch;
     }
+
+    void setname(char name[]){
+        strcpy(this->name,name);
+    }
 };
 
 
 
 int main(){
   
-    Hero anish(70, 'C');
-    anish.print();
+    Hero hero1;
+    hero1.sethealth(50);
+    hero1.setlevel('D');
+    char name[7] = "Babbar";
+    hero1.setname(name);
 
-    // copy constructor
-    Hero r(anish);
-    r.print();
+    hero1.print();
+
+    //use default copy constructor
+
+    Hero hero2(hero1);
+    hero2.print();
+
+    hero1.name[0] = 'G';
+    hero1.print();
+    hero2.print();
+
+
 
 
 
