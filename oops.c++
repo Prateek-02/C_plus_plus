@@ -29,11 +29,15 @@ class Hero{
     }
 
     //copy constructor
-    // Hero(Hero& temp){
-    //     cout<<"Copy constructor called"<<endl;
-    //     this->health = temp.health;
-    //     this->level = temp.level;
-    // }
+    Hero(Hero& temp){
+
+        char *ch = new char[strlen(temp.name)+1];
+        strcpy(ch, temp.name);
+        this->name=ch;
+        cout<<"Copy constructor called"<<endl;
+        this->health = temp.health;
+        this->level = temp.level;
+    }
 
     void print(){
         cout<<endl;
