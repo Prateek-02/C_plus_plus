@@ -1,6 +1,10 @@
 #include<iostream>
 using namespace std;
 
+
+/*
+// ENCAPSULATION
+
 class Student{
     private:
     string name;
@@ -29,9 +33,6 @@ class Student{
     }
 };
 
-
-
-
 int main(){
     Student obj1;
     obj1.setName("Rahul");
@@ -40,5 +41,59 @@ int main(){
     cout<<"Name is: "<<obj1.getName()<<endl;
     cout<<"Age is: "<<obj1.getAge()<<endl;
     cout<<"Height is: "<<obj1.getHeight()<<"ft"<<endl;
+    return 0;
+}
+*/
 
+
+
+// INHERITANCE
+
+class Human{
+    public:
+    double height;
+    int weight;
+    int age;
+
+    public:
+    double getHeight(){
+        return height;
+    }
+    int getWeight(){
+        return weight;
+    }
+    int getAge(){
+        return age;
+    }
+
+    void setWeight(int w){
+        weight = w;
+    }
+};
+
+class Male: public Human{          // Now we can access all the properties of Human class through Object of Male class
+    public:
+    string color;
+
+    void sleep(){
+        cout<<"Male sleeping";
+    }
+
+};
+
+
+int main(){
+
+    Male obj1;
+    cout<<obj1.age<<endl;
+    cout<<obj1.weight<<endl;
+    cout<<obj1.height<<endl;
+    cout<<obj1.color<<endl;
+
+    obj1.setWeight(70);
+    cout<<obj1.getWeight()<<endl;
+    obj1.sleep();
+
+
+    return 0;
 }
