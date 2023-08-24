@@ -66,9 +66,18 @@ class Human{
         return age;
     }
 
+    void setHeight(double h){
+    height = h;
+    }
     void setWeight(int w){
         weight = w;
     }
+    void setAge(int a){
+        age = a;
+    }
+
+
+
 };
 
 class Male: public Human{          // Now we can access all the properties of Human class through Object of Male class
@@ -85,13 +94,19 @@ class Male: public Human{          // Now we can access all the properties of Hu
 int main(){
 
     Male obj1;
+    /*
     cout<<obj1.age<<endl;
     cout<<obj1.weight<<endl;
     cout<<obj1.height<<endl;
     cout<<obj1.color<<endl;
+    */
 
+    obj1.setHeight(5.8);
     obj1.setWeight(70);
-    cout<<obj1.getWeight()<<endl;
+    obj1.setAge(20);
+    cout<<"Height: "<<obj1.getHeight()<<endl;
+    cout<<"Weight: "<<obj1.getWeight()<<endl;
+    cout<<"Age: "<<obj1.getAge()<<endl;
     obj1.sleep();
 
 
