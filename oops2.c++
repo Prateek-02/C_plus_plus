@@ -5,13 +5,13 @@ class Student{
     private:
     string name;
     int age;
-    int height;
+    double height;
 
     public:
     int getAge(){
         return age;
     }
-    int getHeight(){
+    double getHeight(){
         return height;
     }
     string getName(){
@@ -21,7 +21,7 @@ class Student{
     void setAge(int a){
         age = a;
     }
-    void setHeight(int h){
+    void setHeight(double h){
         height = h;
     }
     void setName(string n){
@@ -36,7 +36,7 @@ int main(){
     Student obj1;
     obj1.setName("Rahul");
     obj1.setAge(18);
-    obj1.setHeight(5);
+    obj1.setHeight(5.6);
     cout<<"Name is: "<<obj1.getName()<<endl;
     cout<<"Age is: "<<obj1.getAge()<<endl;
     cout<<"Height is: "<<obj1.getHeight()<<"ft"<<endl;
