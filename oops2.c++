@@ -49,6 +49,7 @@ int main(){
 
 // INHERITANCE
 
+/*
 class Human{
     public:
     double height;
@@ -75,9 +76,6 @@ class Human{
     void setAge(int a){
         age = a;
     }
-
-
-
 };
 
 class Male: public Human{          // Now we can access all the properties of Human class through Object of Male class
@@ -87,9 +85,7 @@ class Male: public Human{          // Now we can access all the properties of Hu
     void sleep(){
         cout<<"Male sleeping";
     }
-
 };
-
 
 int main(){
 
@@ -100,7 +96,7 @@ int main(){
     cout<<obj1.height<<endl;
     cout<<obj1.color<<endl;
     */
-
+/*
     obj1.setHeight(5.8);
     obj1.setWeight(70);
     obj1.setAge(20);
@@ -109,6 +105,43 @@ int main(){
     cout<<"Age: "<<obj1.getAge()<<endl;
     obj1.sleep();
 
-
     return 0;
+}
+*/
+
+// Heirarchical inhertance
+
+class A{
+    public:
+    void func1(){
+        cout<<"inside function 1"<<endl;
+    }
+};
+
+class B: public A{
+    public:
+    void func2(){
+        cout<<"Inside function 2"<<endl;
+    }
+};
+
+class C: public A{
+    public:
+    void func3(){
+        cout<<"Inside function 3";
+    }
+};
+
+int main(){
+    A obj1;
+    obj1.func1();
+
+    B obj2;
+    obj2.func1();
+    obj2.func2();
+
+    C obj3;
+    obj3.func1();
+    obj3.func3();
+
 }
