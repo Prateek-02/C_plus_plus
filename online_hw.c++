@@ -125,7 +125,7 @@ int main(){
 
 // Linear search
 
-/*
+
 int main(){
     int n;
     cout<<"Enter the number of elements: ";
@@ -149,17 +149,22 @@ int main(){
     int target;
     cout<<"Enter the target element: ";
     cin>>target;
+    int found=-1;
 
     for(int i=0;i<n;i++){
         if(arr[i]==target){
-            cout<<"Element found at index: "<<i;
+            found = i;
             break;
         }
     }
+    if(found != -1){
+        cout<<"Element found at index: "<<found;
+    }
+    else{
+        cout<<"Element not found";
+    }
  }
- */
-
-
+ 
 
 
 //Binary search
@@ -688,6 +693,7 @@ int main(){
 
 // Enum
 
+/*
 enum Color{
     RED,GREEN,BLUE,YELLOW
 };
@@ -701,4 +707,4 @@ int main(){
         cout<<"Different color";
     }
 }
-
+*/
