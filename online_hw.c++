@@ -125,7 +125,7 @@ int main(){
 
 // Linear search
 
-
+/*
 int main(){
     int n;
     cout<<"Enter the number of elements: ";
@@ -163,7 +163,8 @@ int main(){
     else{
         cout<<"Element not found";
     }
- }
+}
+*/
  
 
 
@@ -693,7 +694,7 @@ int main(){
 
 // Enum
 
-/*
+
 enum Color{
     RED,GREEN,BLUE,YELLOW
 };
@@ -707,4 +708,4 @@ int main(){
         cout<<"Different color";
     }
 }
-*/
+
