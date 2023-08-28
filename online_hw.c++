@@ -693,7 +693,7 @@ int main(){
 */
 
 /*
-// Enum
+// Enumerations
 
 
 enum Color{
@@ -711,8 +711,8 @@ int main(){
 }
 */
 
-
-// Structures
+/*
+// STRUCTURES
 
 struct person{
     string name;
@@ -738,4 +738,20 @@ int main(){
         cout<<p1[i].age<<" ";
     }
     return 0;
+}
+*/
+
+
+// UNION
+
+union data
+{
+    int age;
+    float height;
+    char ch;
+    double amount;
+}d;
+
+int main(){
+    cout<<sizeof(d);
 }
