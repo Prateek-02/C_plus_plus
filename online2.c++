@@ -31,6 +31,7 @@ int main(){
 
 // Inline function use
 
+/*
 class Rectangle
 {
     private:
@@ -53,4 +54,45 @@ int main(){
     r.setNum(20.0,10.0);
     double area = r.calc();
     cout<<"Area is: "<<area<<endl;
+}
+*/
+
+
+// Static members
+
+/*
+class Myclass{
+    public:
+    static int count;
+    Myclass(){
+        count++;
+    }
+    static void showCount(){
+        cout<<"Count is: "<<count;
+    }
+};
+
+int Myclass :: count=0;
+
+int main(){
+    Myclass obj1,obj2,obj3;
+
+    Myclass::showCount();
+
+    return 0;
+
+}
+*/
+
+
+void greet(string name="guest",int age=20){
+    cout<<"Hello "<<name<<" your age is: "<<age<<endl;;
+}
+
+int main(){
+    greet();
+    greet("Alice");
+    greet("Bob",30);
+    
+    return 0;
 }
