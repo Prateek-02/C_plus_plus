@@ -53,6 +53,10 @@ int main(){
 }
 */
 
+/*
+
+Array Merging
+
 int main(){
     int n,m;
     cout<<"enter n: ";
@@ -85,6 +89,21 @@ int main(){
     for(int i=0;i<merged;i++){
         cout<<arr3[i]<<" ";
     }
+   
+}
+*/
 
-    
+
+// INLINE Function
+
+inline int add(int a, int b){
+    return a+b;
+}
+
+int main(){
+    int x=5,y=6;
+    int result = add(x,y);
+    cout<<"Sum: "<<result;
+
+    return 0;
 }
