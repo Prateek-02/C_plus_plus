@@ -692,6 +692,7 @@ int main(){
 }
 */
 
+/*
 // Enum
 
 
@@ -708,4 +709,11 @@ int main(){
         cout<<"Different color";
     }
 }
+*/
 
+
+// Structures
+
+int main(){
+    
+}
