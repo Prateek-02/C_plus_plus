@@ -52,5 +52,5 @@ int main(){
     Rectangle r;
     r.setNum(20.0,10.0);
     double area = r.calc();
-    cout<<"Arra is: "<<area<<endl;
+    cout<<"Area is: "<<area<<endl;
 }
