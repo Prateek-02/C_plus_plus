@@ -714,6 +714,28 @@ int main(){
 
 // Structures
 
+struct person{
+    string name;
+    int age;
+}p1[5];
+
 int main(){
-    
+    cout<<"Enter the names: "; 
+    for(int i=0;i<5;i++){
+        cin>>p1[i].name;
+    }
+    cout<<"Enter the age: ";
+    for(int i=0;i<5;i++){
+        cin>>p1[i].age;
+    }
+    cout<<"Names: ";
+    for(int i=0;i<5;i++){
+        cout<<p1[i].name<<" ";
+    }
+    cout<<endl;
+    cout<<"Age: ";
+    for(int i=0;i<5;i++){
+        cout<<p1[i].age<<" ";
+    }
+    return 0;
 }
