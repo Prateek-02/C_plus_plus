@@ -1,4 +1,6 @@
 #include<iostream>
+#include<iomanip>
+#include<istream>
 using namespace std;
 
 // Normal function use
@@ -84,7 +86,7 @@ int main(){
 }
 */
 
-
+/*
 void greet(string name="guest",int age=20){
     cout<<"Hello "<<name<<" your age is: "<<age<<endl;;
 }
@@ -94,5 +96,22 @@ int main(){
     greet("Alice");
     greet("Bob",30);
     
+    return 0;
+}
+*/
+
+
+//Manipulators
+
+int main(){
+    int num=123;
+    double val = 3.14159;
+
+    cout<<"Number: "<<num<<endl;
+    cout<<"Value: "<<setprecision(4)<<val<<endl;
+    cout<<setw(10)<<left<<"left"<<setw(10)<<right<<"right"<<endl;
+    cout<<"Hex value: "<<hex<<num<<endl;
+    cout<<"Oct value: "<<oct<<num<<endl;
+
     return 0;
 }
