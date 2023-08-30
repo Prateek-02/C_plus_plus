@@ -253,6 +253,7 @@ int main(){
 */
 
 
+/*
 class base{
     private:
     int private_var;
@@ -274,4 +275,21 @@ int main(){
     base obj1;
     func(obj1);
 
+}
+*/
+
+
+// POINTERS
+
+int main(){
+    int a=5;
+    cout<<a<<endl;
+    cout<<&(a)<<endl;
+    int *p = &a;
+    int **q;
+    q=&p;
+    cout<<*p<<endl;  // value of a
+    cout<<q<<endl;   // address of p
+    cout<<*q<<endl;  // address of a
+    cout<<**q<<endl;  // value of a
 }
