@@ -35,14 +35,13 @@ int main(){
 
     cout<<"Maximum value is: "<<getmax(arr,n)<<endl;
     cout<<"Minimum value is: "<<getmin(arr,n)<<endl;
-
-
 }
 */
 
 
 //Finding sum of all elements of an array
 
+/*
 int main(){
     int n;
     cin>>n;
@@ -57,4 +56,35 @@ int main(){
         sum+= arr[i];
     }
     cout<<"Sum is: "<<sum;
+}
+*/
+
+
+//Linear search
+
+int main(){
+    int n;
+    cin>>n;
+
+    int arr[100];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    int target;
+    cin>>target;
+
+    int found=-1;
+    for(int i=0;i<n;i++){
+        if(arr[i]==target){
+            found=i;
+            break;
+        }
+    }
+    if(found!=-1){
+        cout<<"Element found at index: "<<found;
+    }
+    else{
+        cout<<"Element not found";
+    }
 }
