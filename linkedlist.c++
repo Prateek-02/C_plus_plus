@@ -22,6 +22,14 @@ void insertatHead(Node* &head,int d){
 
 }
 
+void insertatTail(Node* &tail,int d){
+
+    //new node create
+    Node* temp = new Node(d);
+    tail -> next = temp;
+    tail = temp;
+}
+
 void print(Node* &head){
     Node* temp = head;             // temp = 12
     while(temp!=NULL){        
@@ -39,8 +47,21 @@ int main(){
 
     //head pointed to node1
     Node* head = node1;
+    Node* tail = node1;
+    // print(head);
+
+    // insertatHead(head,12);
+    // print(head);
+
+    // insertatHead(head,15);
+    // print(head);
+
     print(head);
 
-    insertatHead(head,12);
+    insertatTail(tail,12);
     print(head);
+
+    insertatTail(tail,15);
+    print(head);
+    
 }
