@@ -150,7 +150,7 @@ int main(){
 /*
 int main(){
     int n;
-    cout<<"Enter the number of elemements: ";
+    cout<<"Enter the number of elements: ";
     cin>>n;
 
     int arr[100];
@@ -173,7 +173,7 @@ int main(){
     cin>>value;
 
 
-    for(int i=n;i>index-1;i--){
+    for(int i=n;i>index;i--){
         arr[i] = arr[i-1];
     }
     arr[index]=value;
@@ -201,7 +201,7 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    cout<<"Original array: ";
+    cout"Original array: ";
 
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
@@ -228,8 +228,10 @@ int main(){
 }
 */
 
-//INSERTION SORT
 
+
+//INSERTION SORT
+/*
 int main(){
     int n;
     cin>>n;
@@ -265,6 +267,5 @@ int main(){
         cout<<arr[i]<<" ";
     }
 }
-
-
+*/
 
