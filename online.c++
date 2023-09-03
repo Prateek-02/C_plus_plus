@@ -256,6 +256,7 @@ int main(){
 */
 
 
+
 //Sum and differnece
 
 /*
@@ -741,7 +742,7 @@ int main(){
 }
 */
 
-
+/*
 // UNION
 
 union data
@@ -755,3 +756,4 @@ union data
 int main(){
     cout<<sizeof(d);
 }
+*/
