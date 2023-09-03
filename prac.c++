@@ -147,6 +147,7 @@ int main(){
 
 //Insert at a position
 
+/*
 int main(){
     int n;
     cout<<"Enter the number of elemements: ";
@@ -183,5 +184,44 @@ int main(){
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
+}
+*/
 
+//Deleting a element
+
+int main(){
+    int n;
+    cout<<"Enter the number of elements: ";
+    cin>>n;
+
+    int arr[100];
+
+    cout<<"Enter the elements of array: ";
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    cout<<"Original array: ";
+
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+
+    int value;
+    cout<<"Enter the element you want to delete: ";
+    cin>>value;
+
+    int index;
+    cout<<"Enter the index you want to delete: ";
+    cin>>index;
+
+    for(int i=index;i<n-1;i++){
+        arr[i]=arr[i+1];
+    }
+    n--;
+    cout<<"Updated array: ";
+
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
 }
