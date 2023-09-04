@@ -1,6 +1,8 @@
 #include<iostream>
 #include<iomanip>
 #include<istream>
+#include<string>
+#include<cstring>
 using namespace std;
 
 // Normal function use
@@ -281,6 +283,7 @@ int main(){
 
 // POINTERS
 
+/*
 int main(){
     int a=5;
     cout<<a<<endl;
@@ -292,4 +295,27 @@ int main(){
     cout<<q<<endl;   // address of p
     cout<<*q<<endl;  // address of a
     cout<<**q<<endl;  // value of a
+}
+*/
+
+
+
+//STRINGS
+
+int main(){
+    string str="this is c++ code";
+    cout<<str<<endl;
+    char str1[6]={'h','e','l','l','o','\0'};
+    cout<<str1<<endl;
+    char str2[]="hi";
+    cout<<str2<<endl;
+    string str3("hello");
+    char str4[30];
+    cout<<"Enter the city: ";
+    cin.get(str4,30);
+    cout<<"You hav entered: "<<str4<<endl;
+    cout<<strlen(str4)<<endl;
+    string str5=strcat(str2,str1);
+    cout<<str5<<endl;
+    
 }
