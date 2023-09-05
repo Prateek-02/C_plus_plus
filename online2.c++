@@ -302,8 +302,11 @@ int main(){
 
 //STRINGS
 
+/*
 int main(){
     string str="this is c++ code";
+    str.resize(5);
+    cout<<str.capacity();
     cout<<str<<endl;
     char str1[6]={'h','e','l','l','o','\0'};
     cout<<str1<<endl;
@@ -317,5 +320,58 @@ int main(){
     cout<<strlen(str4)<<endl;
     string str5=strcat(str2,str1);
     cout<<str5<<endl;
+    string str6 = "Apple";
+    string str7 = "Mango";
+
+    cout<<"Before swapping: "<<str6<<" "<<str7<<endl;
+    str6.swap(str7);
+    cout<<"After swapping: "<<str6<<" "<<str7<<endl;
     
+}
+*/
+
+
+
+//CONSTRUCTORS
+
+/*
+// Normal constructor
+class construct{
+    public:
+    int a,b;
+    construct(){
+        a=10;
+        b=20;
+    }
+};
+
+int main(){
+    construct c;
+    cout<<"a: "<<c.a<<" b: "<<c.b;
+}
+*/
+
+//Parameterized constructor
+
+class Point{
+    private:
+    int x,y;
+    public:
+    Point(int x1, int y1){
+        x=x1;
+        y=y1;
+    }
+    int getx(){
+        return x;
+    }
+    int gety(){
+        return y;
+    }
+};
+
+int main(){
+    Point *p = new Point(10,25) ;
+    Point p1(10,15);
+    cout<<"x: "<<(*p).getx()<<" b: "<<(*p).gety()<<endl;
+    cout<<"x: "<<p1.getx()<<" b: "<<p1.gety()<<endl;
 }
