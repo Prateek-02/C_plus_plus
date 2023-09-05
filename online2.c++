@@ -351,6 +351,7 @@ int main(){
 }
 */
 
+/*
 //Parameterized constructor
 
 class Point{
@@ -374,4 +375,28 @@ int main(){
     Point p1(10,15);
     cout<<"x: "<<(*p).getx()<<" b: "<<(*p).gety()<<endl;
     cout<<"x: "<<p1.getx()<<" b: "<<p1.gety()<<endl;
+}
+*/
+
+
+//Copy constructor
+
+class Sample{
+    int id;
+    public:
+    void init(int x){
+        id=x;
+    }
+    void display(){
+        cout<<" id: "<<id;
+    }
+};
+
+int main(){
+    Sample obj1;
+    obj1.init(10);
+    obj1.display();
+    Sample obj2(obj1);
+    obj2.display();
+
 }
