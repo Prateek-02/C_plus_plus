@@ -27,7 +27,7 @@ class Node{
         temp->next=n1;
     }
 
-    void insertatposition(Node* head,int val,int pos){
+    void insertatposition(Node* head,int pos,int val){
         Node* n1 = new Node(val);
         Node* temp = head;
         int cur_pos=0;
@@ -37,6 +37,16 @@ class Node{
         }
         n1->next=temp->next;
         temp->next=n1;
+    }
+
+    void update(Node* &head, int k,int val){
+        Node* temp = head;
+        int cur_pos=0;
+        while(cur_pos!=k){
+            temp=temp->next;
+            cur_pos++;
+        }
+        temp->val=val;
     }
 
     void display(Node* head){
@@ -57,6 +67,8 @@ int main(){
     display(head);
     insertattail(head,3);
     display(head);
-    insertatposition(head,4,2);
+    insertatposition(head,2,4);
+    display(head);
+    update(head,2,5);
     display(head);
 }
