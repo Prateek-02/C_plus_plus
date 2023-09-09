@@ -184,24 +184,46 @@ class node{
             cout<<temp->data<<"->";
             temp=temp->next;
         }
-        cout<<temp;
+        cout<<"NULL";
     }
 
-    node* reverse(node* &head){
+    // node* reverse(node* &head){
+    //     node* prev = NULL;
+    //     node* curr = head;
+    //     node* next;
+
+    //     while(curr!=NULL){
+    //         next=curr->next;
+    //         curr->next=prev;
+
+    //         prev=curr;
+    //         curr=next;
+    //     }
+    //     return prev;
+    // }
+
+    node* reversek(node* &head,int k){
         node* prev = NULL;
         node* curr = head;
         node* next;
 
-        while(curr!=NULL){
+        int count =0;
+        while(curr!=NULL && count<k){
             next=curr->next;
             curr->next=prev;
 
             prev=curr;
             curr=next;
+            count++;
+        }
+
+        if(next!=NULL){
+        head->next = reversek(next,k);
         }
         return prev;
     }
 
+/*
     node* revrec(node* &head){
 
         if(head==NULL || head->next==NULL){
@@ -214,6 +236,7 @@ class node{
 
         return newhead;
     }
+*/
 
 int main(){
     node* head = NULL;
@@ -221,19 +244,25 @@ int main(){
     insertattail(head,1);
     insertattail(head,2);
     insertattail(head,3);
+    insertattail(head,4);
+    insertattail(head,5);
+    insertattail(head,6);
     display(head);
     cout<<endl;
 
-    //insertion at head
+    // insertion at head
     insertathead(head,8);
     display(head);
     cout<<endl;
 
     //reverse
 
-    node* newhead = reverse(head);
-    display(newhead); 
-    cout<<endl;
+    // node* newhead = reverse(head);
+    // display(newhead); 
+    // cout<<endl;
+    int k = 2;
+    node* newhead = reversek(head,k);
+    display(newhead);
 
 
 
