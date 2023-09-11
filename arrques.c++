@@ -5,7 +5,7 @@ using namespace std;
 
 void swapalt(int arr[],int n){
     for(int i=0;i<n;i+=2){
-        if(arr[i+1]<=n){
+        if(i+1<n){
             swap(arr[i],arr[i+1]);
         }
     }
@@ -16,8 +16,6 @@ void printarray(int arr[],int n){
         cout<<arr[i]<<" ";
     }
 }
-
-
 
 int main(){
     int n;
