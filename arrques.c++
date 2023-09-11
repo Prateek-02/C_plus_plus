@@ -3,10 +3,15 @@ using namespace std;
 
 //Swap alternate
 
+/*
 void swapalt(int arr[],int n){
     for(int i=0;i<n;i+=2){
         if(i+1<n){
-            swap(arr[i],arr[i+1]);
+            // swap(arr[i],arr[i+1]);   // swap function is available
+
+            int temp = arr[i];         // swap function is not available
+            arr[i] = arr[i+1];
+            arr[i+1]=temp;
         }
     }
 }
@@ -28,4 +33,30 @@ int main(){
 
     swapalt(arr,n);
     printarray(arr,n);
+}
+*/
+
+
+//Find unique element
+
+int findunique(int arr[],int n){
+    int ans=0;
+    for(int i=0;i<n;i++){
+        ans = ans^arr[i];
+    }
+    return ans;
+}
+
+
+int main(){
+    int n;
+    cin>>n;
+
+    int arr[100];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    int res = findunique(arr,n);
+    cout<<res;
 }
