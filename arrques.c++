@@ -39,6 +39,7 @@ int main(){
 
 //Find unique element
 
+/*
 int findunique(int arr[],int n){
     int ans=0;
     for(int i=0;i<n;i++){
@@ -59,4 +60,34 @@ int main(){
 
     int res = findunique(arr,n);
     cout<<res;
+}
+*/
+
+// Find duplicates
+
+int findDup(int arr[],int n){
+    int ans=0;
+    for(int i=0;i<n;i++){
+        ans=ans^arr[i];
+    }
+
+    for(int i=0;i<n;i++){
+        ans=ans^i;
+    }
+    return ans;
+}
+
+
+int main(){
+    int n;
+    cin>>n;
+
+    int arr[100];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    int res = findDup(arr,n);
+    cout<<res;
+
 }
