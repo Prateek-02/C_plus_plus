@@ -127,12 +127,40 @@ int main(){
 
 
 // Pair sum
-
+/*
 void pairsum(int arr[],int n,int target){
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i]+arr[j]==target){
                 cout<<arr[i]<<" "<<arr[j]<<" ";
+            }
+        }
+    }
+}
+
+int main(){
+    int n;
+    cin>>n;
+
+    int arr[100];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    int target = 7;
+    pairsum(arr,n,target);
+}
+*/
+
+
+// Triplet sum
+
+void pairsum(int arr[],int n,int target){
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            for(int k=j+1;k<n;k++){
+                if(arr[i]+arr[j]+arr[k]==target){
+                cout<<arr[i]<<" "<<arr[j]<<" "<<arr[k]<<" ";
+                }
             }
         }
     }
