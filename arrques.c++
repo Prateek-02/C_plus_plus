@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 //Swap alternate
@@ -65,6 +66,7 @@ int main(){
 
 // Find duplicates
 
+/*
 int findDup(int arr[],int n){
     int ans=0;
     for(int i=0;i<n;i++){
@@ -89,5 +91,38 @@ int main(){
 
     int res = findDup(arr,n);
     cout<<res;
+
+}
+*/
+
+//Find common elements
+
+void commonelements(int arr1[],int arr2[],int n,int m){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            if(arr1[i]==arr2[j]){
+                cout<<arr1[i]<<" ";
+                break;
+            }
+        }
+    }
+
+}
+
+int main(){
+    int n,m;
+    cin>>n;
+    int arr1[100];
+    for(int i=0;i<n;i++){
+        cin>>arr1[i];
+    }
+
+    cin>>m;
+    int arr2[100];
+    for(int i=0;i<m;i++){
+        cin>>arr2[i];
+    }
+
+    commonelements(arr1,arr2,n,m);
 
 }
