@@ -1,5 +1,4 @@
 #include<iostream>
-#include<vector>
 using namespace std;
 
 //Swap alternate
@@ -96,7 +95,7 @@ int main(){
 */
 
 //Find common elements
-
+/*
 void commonelements(int arr1[],int arr2[],int n,int m){
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
@@ -116,7 +115,6 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr1[i];
     }
-
     cin>>m;
     int arr2[100];
     for(int i=0;i<m;i++){
@@ -124,5 +122,30 @@ int main(){
     }
 
     commonelements(arr1,arr2,n,m);
+}
+*/
 
+
+// Pair sum
+
+void pairsum(int arr[],int n,int target){
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[i]+arr[j]==target){
+                cout<<arr[i]<<" "<<arr[j]<<" ";
+            }
+        }
+    }
+}
+
+int main(){
+    int n;
+    cin>>n;
+
+    int arr[100];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    int target = 7;
+    pairsum(arr,n,target);
 }
