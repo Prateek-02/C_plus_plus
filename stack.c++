@@ -29,12 +29,14 @@ int main(){
 */
 
 
+
 //Stack implementation using array
 
+/*
 class Stack{
 
     //Properties
-    
+
     public:
     int *arr;
     int top;
@@ -113,5 +115,89 @@ int main(){
     else{
         cout<<"Stack is not empty"<<endl;
     }
+
+    return 0;
+}
+*/
+
+
+// Two stacks using 1 array
+
+class TwoStack{
+    public:
+    int *arr;
+    int top1;
+    int top2;
+    int size;
+
+
+    TwoStack(int size){
+        this -> size = size;
+        arr = new int[size];
+        top1=-1;
+        top2=size;
+    }
+
+    void push1(int element){
+        if(top2-top1>1){
+            top1++;
+            arr[top1] = element;
+        }
+        else{
+            cout<<"Stack overflow"<<endl;
+        }
+    }
+
+    void push2(int element){
+        if(top2-top1>1){
+            top2--;
+            arr[top2] = element;
+        }
+        else{
+            cout<<"Stack overflow"<<endl;
+        }
+    }
+
+    int pop1(){
+        if(top1>=0){
+            int ans = arr[top1];
+            top1--;
+            return ans;
+        }
+        else{
+            cout<<"Stack underflow"<<endl;
+        }
+    }
+
+    int pop2(){
+        if(top2<size){
+            int ans = arr[top2];
+            top2++;
+            return ans;
+        }
+        else{
+            return -1;
+        }
+    }
+
+};
+
+int main(){
+    TwoStack st(5);
+
+    st.push1(1);
+    st.push1(2);
+    st.push1(3);
+
+    st.push2(4);
+    st.push2(5);
+
+    cout<<st.pop1()<<endl;
+    cout<<st.pop1()<<endl;
+    cout<<st.pop1()<<endl;
+    cout<<st.pop2()<<endl;
+    cout<<st.pop2()<<endl;
+
+    return 0;
 
 }
