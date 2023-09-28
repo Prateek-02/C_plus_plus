@@ -23,6 +23,6 @@ int main(){
         st.pop();
     }
 
-    cout<<"Reversed string is: "<<ans;
+    cout<<"Reversed string is: "<<ans<<endl;
     return 0;
 }
