@@ -32,8 +32,9 @@ int main(){
 //Stack implementation using array
 
 class Stack{
-    //Properties
 
+    //Properties
+    
     public:
     int *arr;
     int top;
@@ -90,9 +91,6 @@ int main(){
 
     Stack st(5);
 
-    st.push(22);
-    st.push(43);
-    st.push(44);
     st.push(22);
     st.push(43);
     st.push(44);
