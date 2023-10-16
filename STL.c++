@@ -5,6 +5,9 @@
 #include<list>
 #include<stack>
 #include<queue>
+#include<set>
+#include<map>
+#include<algorithm>
 
 using namespace std;
 
@@ -215,10 +218,112 @@ int main(){
 */
 
 
-//SET
+//SET      (duplicate value is ignored)
 
+/*
+int main(){
+
+    set<int> st;
+
+    st.insert(5);
+    st.insert(1);
+    st.insert(2);
+    st.insert(0);
+
+    for(int i:st){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+
+    int x = 5;
+
+    for(int i:st){
+        if(i==x){
+            cout<<"element found";
+        }
+    }
+    cout<<endl;
+
+    st.erase(st.begin());
+    for(int i:st){
+        cout<<i<<" ";
+    }
+
+    cout<<"find 5->"<<st.count(5)<<endl;     // it will check if that element is present or not
+}
+*/
+
+
+//MAP
+
+/*
+int main(){
+    map<int,string> m;
+
+    m[1] = "Prateek";
+    m[2] = "Raj";
+    m[13] = "Sinha";
+
+    m.insert({5,"Bheem"});
+
+    cout<<"Before erasing: "<<endl;
+    for(auto i:m){
+        cout<<i.first<<" "<<i.second<<endl;
+    }
+
+    cout<<"finding 13-> "<<m.count(13)<<endl;    // it will check if that element is present or not
+
+    m.erase(13);
+
+    cout<<"After erasing: "<<endl;
+    for(auto i:m){
+        cout<<i.first<<" "<<i.second<<endl;
+    }
+}
+*/
+
+
+//STL ALGORITHM
 
 int main(){
-    
+
+    vector<int> v;
+
+    v.push_back(1);
+    v.push_back(3);
+    v.push_back(6);
+    v.push_back(7);
+
+    cout<<"Finding 6-> "<<binary_search(v.begin(),v.end(),6)<<endl;
+
+
+    cout<<"lower bound-> "<<lower_bound(v.begin(),v.end(),6)-v.begin()<<endl;
+    cout<<"upper bound-> "<<upper_bound(v.begin(),v.end(),4)-v.begin()<<endl;
+
+    int a = 3;
+    int b = 5;
+
+    cout<<"max-> "<<max(a,b);
+    cout<<endl;
+    cout<<"min-> "<<min(a,b);
+    cout<<endl;
+    swap(a,b);
+    cout<<"a-> "<<a<<" "<<"b-> "<<b<<endl;
+
+    string ab = "abcd";
+    reverse(ab.begin(),ab.end());
+    cout<<"string-> "<<ab<<endl;
+
+    rotate(v.begin(),v.begin()+2,v.end());
+    cout<<"after rotating: "<<endl;
+    for(int i:v){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+    cout<<"after sorting: ";
+    sort(v.begin(),v.end());
+    for(int i:v){
+        cout<<i<<" ";
+    }
 
 }
