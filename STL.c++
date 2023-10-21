@@ -155,7 +155,7 @@ int main(){
     cout<<"Top element: "<<s.top()<<endl;
 
     cout<<"size of stack "<<s.size()<<endl;
-    cout<<"Emoty or not-> "<<s.empty()<<endl;
+    cout<<"Empty or not-> "<<s.empty()<<endl;
 }
 */
 
